@@ -1,0 +1,719 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+/*!
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+
+.fa-2x {
+  font-size: 2em;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* VARIABLES */
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+button {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  margin: 0 auto;
+  font-family: 'RobotoDraft', 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+
+.header-wrapper {
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding-top: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header svg {
+  float: left;
+  height: 32px;
+  width: 32px;
+}
+
+header button.hamburger {
+  float: right;
+  color: #333;
+  padding: 0;
+  display: block;
+}
+
+@media (min-width: 400px) {
+  header button.hamburger {
+    display: none;
+  }
+}
+
+header nav {
+  clear: both;
+  float: none;
+  padding-top: 25px;
+  line-height: 50px;
+  height: auto;
+}
+
+@media (min-width: 400px) {
+  header nav {
+    clear: none;
+    display: block;
+    float: right;
+    height: 32px;
+    padding-top: 0;
+  }
+}
+
+nav.nav-hidden {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  nav.nav-hidden {
+    display: block;
+  }
+}
+
+header nav ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+@media (min-width: 400px) {
+  header nav ul li {
+    float: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (min-width: 400px) {
+  header nav ul li a {
+    margin-left: 20px;
+  }
+}
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+main {
+  clear: both;
+  max-width: 1024px;
+  margin: auto;
+  color: #333;
+}
+
+div#content {
+  padding-top: 76px;
+  /* to compensate for the fixed header */
+  height: 100%;
+}
+
+@media (min-width: 800px) {
+  div#content {
+    padding-top: 0;
+  }
+}
+
+/* ==========================================================================
+   Section Styles
+   ========================================================================== */
+
+section {
+  max-width: 640px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 800px) {
+  section {
+    position: relative;
+    padding-bottom: 0;
+    max-width: 1024px;
+    height: 500px;
+    height: 100vh;
+    border-bottom: 0px;
+  }
+
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.text-wrapper {
+  width: 96%;
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .text-wrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 800px) {
+  .text-wrapper {
+    width: 450px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+section h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  section h1 {
+    font-size: 40px;
+  }
+}
+
+section p {
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 500px) {
+  section p {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  section p {
+    font-size: 18px;
+  }
+}
+
+section#intro h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  section#intro h1 {
+    text-align: left;
+    font-size: 50px;
+  }
+}
+
+section#intro p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+@media (min-width: 800px) {
+  section#intro p {
+    text-align: left;
+    font-size: 22px;
+  }
+}
+
+/* ==========================================================================
+   Image Showcase Styles
+   ========================================================================== */
+
+.showcase {
+  width: 100%;
+  height: 300px;
+  height: 60vh;
+  margin-bottom: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 800px) {
+  .showcase {
+    top: 0;
+    left: 470px;
+    width: 554px;
+    width: -webkit-calc(100% - 450px - 20px);
+    width: calc(100% - 450px - 20px);
+    height: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    margin-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   Specific Diagram Styles
+   ========================================================================== */
+
+.showcase.intro {
+  background-size: contain;
+  background-image: url(../img/rpisoc_board.jpg);
+}
+
+@media (min-width: 800px) {
+  .showcase.intro {
+    height: 70%;
+    -webkit-transform: translateY(-50%) translateY(30px);
+    -ms-transform: translateY(-50%) translateY(30px);
+    transform: translateY(-50%) translateY(30px);
+  }
+}
+
+.showcase.usb {
+  background-image: url(http://placehold.it/480x640/eeeeee);
+}
+
+.showcase.pmod {
+  background-image: url(http://placehold.it/480x640/cccccc);
+}
+
+.showcase.psoc {
+  background-image: url(http://placehold.it/480x640/bbbbbb);
+}
+
+.showcase.gpio {
+  background-image: url(http://placehold.it/480x640/aaaaaa);
+}
+
+/* ==========================================================================
+   Headroom.js Styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */

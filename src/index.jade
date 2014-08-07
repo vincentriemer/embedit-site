@@ -1,0 +1,56 @@
+mixin page-section(id)
+  section(id="#{id}")
+    div(class="showcase #{id}")
+    .text-wrapper
+      block
+
+doctype html
+html(lang=eng)
+  head
+    title='Embedit Electronics'
+    link(href='../assets/css/main.min.css', rel='stylesheet')
+  body
+    .header-wrapper
+      header
+        include ../dist/assets/img/embedit-logo.svg
+        button(style='button', class='hamburger')
+          i(class='fa fa-bars fa-2x')
+        nav(id='menu' class='nav-hidden')
+          ul
+            li
+              a(href='#') Home
+              a(href='#') About
+              a(href='#') Blog
+              a(href='#') Contact
+    main
+      #content
+
+        +page-section('intro')
+          :markdown
+            # The RPiSoC
+            An electronics development platform that allows your software to interact with the physical world in a way that emphasizes power and flexibility.
+
+        +page-section('gpio')
+          :markdown
+            # GPIO
+            The RPiSoC features 58 GPIO pins, and in contrast to currently available embedded devices, the vast majority of these can be configured for any of several different purposes.
+            These reconfigurable I/O pins include Analog and Digital I/O, PWM, UART, CAN, I2C, and SPI. This allows for flexible designs that can meet the changing needs of your projects.
+
+        +page-section('psoc')
+          :markdown
+            # PSoC 5LP
+            This chip serves as the core of the RPiSoC. It combines an ARM Cortex-M3 CPU with additional programmable analog and digital functionality. The PSoC can automatically allocate resources where you need them. This lets you use large amounts of peripherals at once, such as 24 PWMs or 7 UARTs, without bogging down the CPU. You can even implement and use logic gates and state machines with them, and examples of this are included in the PSoC Creator software.
+            Onboard Analog functionality includes high resolution ADCS, DACS, Opamps, and more. There’s even a hardware Digital filter processor that allows you to filter signals without wasting CPU cycles. Check out the free PSoC Creator development suite right now to see just how much more you can do right out of the box!
+
+        +page-section('pmod')
+          :markdown
+            # Arduino Shield and Pmod Headers
+            The RPiSoC offers pin to pin compatibility with both Arduino Shields and Pmod interface boards. This lets you harness a huge array of existing peripherals on our powerful platform.  Some examples of these peripherals include motor drivers, touchscreens, NFC devices, GPS receivers and more!
+
+        +page-section('usb')
+          :markdown
+            # USB
+            The RPiSoC has full USB HID and Host capabilities. You can use the micro USB port to enable the RPiSoC to act as a keyboard, mouse, joystick, serial communications device and more. You can also program the board over USB from directly within the PSoC Creator software.  Using USB in your design is as simple as dropping in the USBFS component, and configuring it using the built in GUI interface.
+            PSoC Creator has multiple example projects that show the different uses of the USB component. So, like most things PSoC, you won’t have to start from scratch.
+
+    script(src='../assets/js/main.min.js')

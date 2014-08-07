@@ -1,0 +1,459 @@
+// Imports
+@import "normalize";
+@import "font-awesome";
+
+/* VARIABLES */
+$menu-break-width: 400px;
+$mobile-break-width: 800px;
+$sidebar-width: 450px;
+$sidebar-padding: 20px;
+
+// Mixins
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Fontface
+@font-face {
+    font-family: 'RobotoDraft';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold.woff') format('woff'),
+         url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:focus {
+    outline-style: none;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin: 0 auto;
+    font-family: 'RobotoDraft', 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+
+.header-wrapper {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    background-color: #fff; //fallback
+    background-color: rgba(255,255,255,0.95);
+    padding-top: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header svg {
+    float: left;
+    height: 32px;
+    width: 32px;
+}
+
+header button.hamburger {
+    float: right;
+    color: #333;
+    padding: 0;
+    display: block;
+    @media (min-width: $menu-break-width) {
+        display: none;
+    }
+}
+
+header nav {
+    clear: both;
+    float: none;
+    padding-top: 25px;
+    line-height: 50px;
+    height: auto;
+    @media (min-width: $menu-break-width) {
+        clear: none;
+        display: block;
+        float: right;
+        height: 32px;
+        padding-top: 0;
+    }
+}
+
+nav.nav-hidden {
+    display: none;
+    @media (min-width: $menu-break-width) {
+        display: block;
+    }
+}
+
+header nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+    @media (min-width: $menu-break-width) {
+        float: left;
+        @include vertical-align;
+    }
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    @media (min-width: $menu-break-width) {
+        margin-left: 20px;
+    }
+}
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+main {
+    clear: both;
+    max-width: 1024px;
+    margin: auto;
+    color: #333;
+}
+
+div#content {
+    padding-top: 76px; /* to compensate for the fixed header */
+    height: 100%;
+    @media(min-width: $mobile-break-width) {
+        padding-top: 0;
+    }
+}
+
+/* ==========================================================================
+   Section Styles
+   ========================================================================== */
+
+section {
+    max-width: 640px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    @media(min-width: $mobile-break-width) {
+        position: relative;
+        padding-bottom: 0;
+        max-width: 1024px;
+        height: 500px;
+        height: 100vh;
+        border-bottom: 0px;
+        @include clearfix;
+    }
+}
+
+.text-wrapper {
+    width: 96%;
+    margin: 0 auto;
+    @media(min-width: 500px) {
+        width: 90%;
+    }
+    @media(min-width: $mobile-break-width) {
+        width: $sidebar-width;
+        @include vertical-align;
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+section h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    @media(min-width: $mobile-break-width) {
+        font-size: 40px;
+    }
+}
+
+section p {
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 15px;
+    @media(min-width: 500px){
+        text-align: left;
+        font-size: 16px;
+    }
+    @media(min-width: $mobile-break-width) {
+        font-size: 18px;
+        // font-weight: 200;
+    }
+}
+
+a.btn {
+    display: block;
+    margin: 38px 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #333;
+    color:#333;
+    text-decoration:none;
+    font-weight: 700;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    -webkit-transition: all 0.05s;
+    transition: all 0.05s;
+
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+a.btn i {
+    margin-top: 10px;
+    margin-left: 14px;
+}
+
+a.btn:hover {
+    background-color: #333;
+    color: #fff;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+a.btn:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+a.btn:focus {
+    outline: none;
+}
+
+section#intro {
+}
+
+section#intro h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    @media(min-width: $mobile-break-width) {
+        text-align: left;
+        font-size: 50px;
+    }
+}
+
+section#intro p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    @media(min-width: $mobile-break-width) {
+        text-align: left;
+        font-size: 22px;
+    }
+}
+
+/* ==========================================================================
+   Image Showcase Styles
+   ========================================================================== */
+
+.showcase {
+    width: 100%;
+    height: 300px;
+    height: 60vh;
+    margin-bottom: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(min-width: $mobile-break-width) {
+        top: 0;
+        left: $sidebar-width + $sidebar-padding;
+        width: 1024px - $sidebar-width - $sidebar-padding;
+        width: calc(100% - #{$sidebar-width} - #{$sidebar-padding});
+        height: 100%; // add 1% to ensure overlap
+        @include vertical-align;
+        position: absolute;
+        margin-bottom: 0;
+    }
+}
+
+/* ==========================================================================
+   Specific Diagram Styles
+   ========================================================================== */
+
+.showcase.intro {
+    background-size: contain;
+    background-image: url(../img/rpisoc_board.jpg);
+    @media(min-width: $mobile-break-width) {
+        height: 70%;
+        transform: translateY(-50%) translateY(30px);
+    }
+}
+
+.showcase.usb {
+    background-image: url(http://placehold.it/480x640/eeeeee);
+}
+
+.showcase.rpi {
+    background-image: url(http://placehold.it/480x640/dddddd);
+}
+
+.showcase.pmod {
+    background-image: url(http://placehold.it/480x640/cccccc);
+}
+
+.showcase.psoc {
+    background-image: url(http://placehold.it/480x640/bbbbbb);
+}
+
+.showcase.gpio {
+    background-image: url(http://placehold.it/480x640/aaaaaa);
+}
+
+/* ==========================================================================
+   Headroom.js Styles
+   ========================================================================== */
+.headroom {
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
