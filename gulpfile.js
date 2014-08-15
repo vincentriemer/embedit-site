@@ -18,14 +18,13 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     open = require('gulp-open'),
     marked = require('marked'),
-    uncss = require('gulp-uncss');
+    browserify = require('gulp-browserify');
 
 // Styles
 gulp.task('styles', ['templates'], function() {
   return gulp.src('src/styles/main.scss')
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(uncss({ html: ['dist/index.html'] }))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss({ keepSpecialComments: 0 }))
@@ -48,6 +47,7 @@ gulp.task('dev-styles', ['templates'], function() {
 gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
     .pipe(concat('main.js'))
+    .pipe(browserify())
     .pipe(gulp.dest('dist/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -128,18 +128,16 @@ gulp.task('watch', function() {
   // watch template files
   gulp.watch('src/**/*.jade', ['templates']);
 
-  // Create LiveReload server
-  var server = livereload();
-
   // Watch any files in dist/, reload on change
   gulp.watch(['dist/**']).on('change', function(file) {
-    server.changed(file.path);
+    connect.reload();
   });
 
   // Open the browser to the site's local url 
   var options = {
     url: "http://localhost:8080"
   };
+  
   gulp.src("./dist/index.html")
     .pipe(open("", options));
 });

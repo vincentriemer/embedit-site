@@ -6,7 +6,7 @@
 $menu-break-width: 400px;
 $mobile-break-width: 800px;
 $sidebar-width: 450px;
-$sidebar-padding: 20px;
+$sidebar-padding: 40px;
 
 // Mixins
 @mixin vertical-align {
@@ -215,12 +215,14 @@ header nav ul li {
 }
 
 header nav ul li a {
+    display: block;
     font-size: 16px;
     color: #333;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
     @media (min-width: $menu-break-width) {
+        display: inline;
         margin-left: 20px;
     }
 }
@@ -251,15 +253,13 @@ div#content {
 section {
     max-width: 640px;
     margin: 0 auto;
-    border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     @media(min-width: $mobile-break-width) {
         position: relative;
         padding-bottom: 0;
         max-width: 1024px;
-        height: 500px;
+        min-height: 700px;
         height: 100vh;
-        border-bottom: 0px;
         @include clearfix;
     }
 }
@@ -274,7 +274,7 @@ section {
         width: $sidebar-width;
         @include vertical-align;
         float: left;
-        padding-left: 20px;
+        padding-left: 30px;
     }
 }
 
@@ -378,8 +378,7 @@ section#intro p {
 
 .showcase {
     width: 100%;
-    height: 300px;
-    height: 60vh;
+    height: 400px;
     margin-bottom: 15px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -389,7 +388,7 @@ section#intro p {
         left: $sidebar-width + $sidebar-padding;
         width: 1024px - $sidebar-width - $sidebar-padding;
         width: calc(100% - #{$sidebar-width} - #{$sidebar-padding});
-        height: 100%; // add 1% to ensure overlap
+        height: 101%; // add 1% to ensure overlap
         @include vertical-align;
         position: absolute;
         margin-bottom: 0;

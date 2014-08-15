@@ -19,6 +19,7 @@
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "0.0.8",
+    "gulp-browserify": "^0.5.0",
     "gulp-cache": "^0.2.0",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.3.4",
@@ -40,5 +41,8 @@
     "gulp-uglify": "^0.3.1",
     "gulp-uncss": "^0.4.5",
     "marked": "^0.3.2"
+  },
+  "dependencies": {
+    "viewport-units-buggyfill": "^0.3.1"
   }
 }
