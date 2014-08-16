@@ -1,13 +1,15 @@
 # Embedit Electronics Landing Page
 
-This is the landing website for the Embedit Electronics company and specificly made to showcase their debut product, the RPiSoc.
+This is the landing website for the Embedit Electronics company and specifically made to showcase their debut product, the RPiSoc.
 
 ## Dependancies
 
 - Git
 - Ruby
-- Node.js
 - Ruby SASS
+- Python 2.7.8
+- Node.js
+- Gulp
 
 ## Installation & Setup
 
@@ -18,8 +20,6 @@ This is the landing website for the Embedit Electronics company and specificly m
 #### [Install Ruby](https://www.ruby-lang.org/en/installation/)
 
 For linux and OSX I recommend using RVM. For Windows use the RailsInstaller.
-
-#### [Install Node.js](http://nodejs.org/)
 
 #### Install Ruby SASS
 
@@ -33,13 +33,32 @@ If you get an error message (on a Unix OS) then it's likely you need to use the 
 
     sudo gem install sass
 
+#### [Install Python](https://www.python.org/downloads/)
+
+Ensure you add python to the PATH variable (and that you install version 2.7.8).
+
+#### [Install Node.js](http://nodejs.org/)
+
+**Windows Users:** due to an issue with Windows and Node.js you may have to manually create the `npm` folder here:
+
+    C:\Users\[Current User]\AppData\Roaming\npm
+
+#### Install Gulp
+
+Run the following command in the command prompt/terminal:
+
+    npm install --global gulp
+
+A local version of gulp for the project is already included in the dev dependencies.
+
+
 ### Setup the source code
 
 Navigate to the folder where you want to place the source code of the site in the command prompt/terminal and run the following command:
 
-    git clone https://github.com/vincentriemer/embedit-site.git && cd $
+    git clone https://github.com/vincentriemer/embedit-site.git && cd embedit-site
 
-Once inside the source code folder run the following command to take care of all the npm dependancies:
+Once inside the source code folder run the following command to take care of all the npm dependencies:
 
     npm install
 
@@ -63,4 +82,4 @@ In order to make development a little easier I created a gulp command to automat
 
     gulp serve
 
-To ensure you get the automatic page reloading functionaly make sure you have the LiveReload extension install for your favorite browser.
+To ensure you get the automatic page reloading functionality make sure you have the LiveReload extension install for your favorite browser.
