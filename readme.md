@@ -2,7 +2,7 @@
 
 This is the landing website for the Embedit Electronics company and specifically made to showcase their debut product, the RPiSoc.
 
-## Dependancies
+## Dependencies
 
 - Git
 - Ruby
@@ -13,7 +13,7 @@ This is the landing website for the Embedit Electronics company and specifically
 
 ## Installation & Setup
 
-### Take care of the project dependancies:
+### Take care of the project dependencies:
 
 #### [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
