@@ -15,7 +15,9 @@ This is the landing website for the Embedit Electronics company and specificly m
 
 #### [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
-#### [Install Ruby](https://www.ruby-lang.org/en/installation/) (For linux and OSX I recommend using RVM. For Windows use the RailsInstaller)
+#### [Install Ruby](https://www.ruby-lang.org/en/installation/)
+
+For linux and OSX I recommend using RVM. For Windows use the RailsInstaller.
 
 #### [Install Node.js](http://nodejs.org/)
 
