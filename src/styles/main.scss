@@ -412,6 +412,10 @@ section#intro p {
     background-image: url(../img/embedit-usb.jpg);
 }
 
+.showcase.raspi {
+    background-image: url(../img/embedit-raspi.jpg);
+}
+
 .showcase.pmod {
     background-image: url(../img/embedit-pmod.jpg);
 }
@@ -425,21 +429,13 @@ section#intro p {
 }
 
 /* ==========================================================================
-   Headroom.js Styles
+   Footer Styles
    ========================================================================== */
-.headroom {
-    -webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
-}
-.headroom--pinned {
-    -webkit-transform: translateY(0%);
-    -o-transform: translateY(0%);
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    -webkit-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    transform: translateY(-100%);
+footer {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* ==========================================================================

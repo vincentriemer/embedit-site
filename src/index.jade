@@ -40,23 +40,33 @@ html(lang=eng)
 
             These reconfigurable I/O pins include Analog and Digital I/O, PWM, UART, CAN, I2C, and SPI. This allows for flexible designs that can meet the changing needs of your projects.
 
+        +page-section('raspi')
+          :markdown
+            # Raspberry Pi Header
+            This 26 pin connector allows the RPiSoC to be connected to the [Raspberry Pi’s GPIO](http://www.raspberrypi.org/) header using a ribbon cable.  This opens up endless possibilities that combine the Pi’s breadth of available Linux software and increased compute power, with the various interfaces the RPiSoC provides.  The RPiSoC provides the Pi with several interfaces and features that expansion boards would be hard pressed to match, not to mention providing all the functionality that is PSoC specific.
+
+            In addition to this physical connection, we have created and documented APIs for Python that allow you to easily harness the power of the PSoC’s digital and analog functionality through simple calls. You can check out examples of this [powerful combo](http://www.embeditelectronics.com/rpisoc/facial-recognition-and-tracking-system-with-the-raspberry-pi-and-rpisoc/) in action on our [blog](http://www.embeditelectronics.com/rpisoc/what-about-the-raspberry-pi/).
+
         +page-section('psoc')
           :markdown
             # PSoC 5LP
-            This chip serves as the core of the RPiSoC. It combines an ARM Cortex-M3 CPU with additional programmable analog and digital functionality. The PSoC can automatically allocate resources where you need them. This lets you use large amounts of peripherals at once, such as 24 PWMs or 7 UARTs, without bogging down the CPU. You can even implement and use logic gates and state machines with them, and examples of this are included in the PSoC Creator software.
+            This chip serves as the core of the RPiSoC. It combines an ARM Cortex-M3 CPU with additional programmable analog and digital functionality. The [PSoC](http://www.cypress.com/?rID=72824) can automatically allocate resources where you need them. This lets you use large amounts of peripherals at once, such as 24 PWMs or 7 UARTs, without bogging down the CPU. You can even implement and use [logic gates](http://www.embeditelectronics.com/rpisoc/rethinking-digital-logic-with-the-rpisoc/) and state machines with them, and examples of this are included in the PSoC Creator software.
 
-            Onboard Analog functionality includes high resolution ADCS, DACS, Opamps, and more. There’s even a hardware Digital filter processor that allows you to filter signals without wasting CPU cycles. Check out the free PSoC Creator development suite right now to see just how much more you can do right out of the box!
+            Onboard [Analog functionality](http://www.embeditelectronics.com/rpisoc/analog-functionality/) includes high resolution ADCS, DACS, Opamps, and more. There’s even a hardware Digital filter processor that allows you to filter signals without wasting CPU cycles. Check out the free [PSoC Creator](http://www.embeditelectronics.com/rpisoc/accessibility/) development suite right now to see just how much more you can do right out of the box!
 
         +page-section('pmod')
           :markdown
             # Arduino Shield and Pmod Headers
-            The RPiSoC offers pin to pin compatibility with both Arduino Shields and Pmod interface boards. This lets you harness a huge array of existing peripherals on our powerful platform.  Some examples of these peripherals include motor drivers, touchscreens, NFC devices, GPS receivers and more!
+            The RPiSoC offers pin to pin compatibility with both [Arduino Shields](https://www.adafruit.com/categories/21) and [Pmod interface](http://www.digilentinc.com/Products/Catalog.cfm?NavPath=2,401&Cat=9&CFID=5518716&CFTOKEN=a258a3cde377a7ab-7DB43275-5056-0201-028995E5FD6FE1F6) boards. This lets you harness a huge array of existing peripherals on our powerful platform.  Some examples of these peripherals include motor drivers, [touchscreens](http://www.embeditelectronics.com/rpisoc/lcd-twitter-feed-with-raspberry-pi-and-rpisoc/), NFC devices, GPS receivers and more!
 
         +page-section('usb')
           :markdown
             # USB
-            The RPiSoC has full USB HID and Host capabilities. You can use the micro USB port to enable the RPiSoC to act as a keyboard, mouse, joystick, serial communications device and more. You can also program the board over USB from directly within the PSoC Creator software.  Using USB in your design is as simple as dropping in the USBFS component, and configuring it using the built in GUI interface.
+            The RPiSoC has full USB HID and Host capabilities. You can use the micro USB port to enable the RPiSoC to act as a keyboard, mouse, joystick, serial communications device and more. You can also program the board over USB from directly within the [PSoC Creator](http://www.embeditelectronics.com/rpisoc/accessibility/) software.  Using USB in your design is as simple as dropping in the USBFS component, and configuring it using the built in GUI interface.
             
             PSoC Creator has multiple example projects that show the different uses of the USB component. So, like most things PSoC, you won’t have to start from scratch.
+
+    footer
+      p Copyright © 2014 Embedit Electronics
 
     script(src='./assets/js/main.min.js')
